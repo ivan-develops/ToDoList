@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #fad355, #fc8969);
+    min-height: 100vh;
+    color: #fff;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+form .todo-input,
+form .todo-button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    background: white;
+    border: none;
+}
+
+form .todo-button{
+    color: #fc8969;
+    background: white;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+form .todo-button:hover{
+    background: #fc8969;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container .todo-list {
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    transition: all 1s ease;
+    
+}
+.todo-item {
+    flex:1;
+    padding: 0.8rem 0.5rem;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #fc8969;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.complete-btn {
+    background: #2eb62e;
+}
+
+.complete-btn:hover {
+    background-color: #d0fdd0;
+    color: #2eb62e;
+}
+.trash-btn:hover {
+    color: #fc8969;
+    background: #ffeae4;
+}
+
+.mark-completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(8rem) rotate(35deg);
+    opacity: 0;
+}
